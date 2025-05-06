@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB15CB702DC9722C008432C2 /* dti_lembretesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15CB6F2DC9722C008432C2 /* dti_lembretesApp.swift */; };
+		FB15CB722DC9722C008432C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15CB712DC9722C008432C2 /* ContentView.swift */; };
+		FB15CB742DC9722E008432C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB15CB732DC9722E008432C2 /* Assets.xcassets */; };
+		FB15CB772DC9722E008432C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB15CB762DC9722E008432C2 /* Preview Assets.xcassets */; };
+		FB15CB812DC9722F008432C2 /* LembreteStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15CB802DC9722F008432C2 /* LembreteStoreTests.swift */; };
+		FB15CB8B2DC9722F008432C2 /* dti_lembretesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15CB8A2DC9722F008432C2 /* dti_lembretesUITests.swift */; };
+		FB15CB8D2DC9722F008432C2 /* dti_lembretesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15CB8C2DC9722F008432C2 /* dti_lembretesUITestsLaunchTests.swift */; };
+		FB15CB9A2DC97A72008432C2 /* CriarLembreteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15CB992DC97A72008432C2 /* CriarLembreteView.swift */; };
+		FB15CB9C2DC97BA7008432C2 /* ListarLembretesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15CB9B2DC97BA7008432C2 /* ListarLembretesView.swift */; };
+		FB15CB9E2DC97DEE008432C2 /* Lembretes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15CB9D2DC97DEE008432C2 /* Lembretes.swift */; };
+		FB15CBA02DC97E66008432C2 /* LembreteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15CB9F2DC97E66008432C2 /* LembreteStore.swift */; };
+		FB15CBA22DC98506008432C2 /* DetalheLembreteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15CBA12DC98506008432C2 /* DetalheLembreteView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB15CB7D2DC9722F008432C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB15CB642DC9722C008432C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB15CB6B2DC9722C008432C2;
+			remoteInfo = "dti-lembretes";
+		};
+		FB15CB872DC9722F008432C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB15CB642DC9722C008432C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB15CB6B2DC9722C008432C2;
+			remoteInfo = "dti-lembretes";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FB15CB6C2DC9722C008432C2 /* dti-lembretes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dti-lembretes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB15CB6F2DC9722C008432C2 /* dti_lembretesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dti_lembretesApp.swift; sourceTree = "<group>"; };
+		FB15CB712DC9722C008432C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FB15CB732DC9722E008432C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB15CB762DC9722E008432C2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FB15CB7C2DC9722F008432C2 /* dti-lembretesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dti-lembretesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB15CB802DC9722F008432C2 /* LembreteStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LembreteStoreTests.swift; sourceTree = "<group>"; };
+		FB15CB862DC9722F008432C2 /* dti-lembretesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dti-lembretesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB15CB8A2DC9722F008432C2 /* dti_lembretesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dti_lembretesUITests.swift; sourceTree = "<group>"; };
+		FB15CB8C2DC9722F008432C2 /* dti_lembretesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dti_lembretesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FB15CB992DC97A72008432C2 /* CriarLembreteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriarLembreteView.swift; sourceTree = "<group>"; };
+		FB15CB9B2DC97BA7008432C2 /* ListarLembretesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListarLembretesView.swift; sourceTree = "<group>"; };
+		FB15CB9D2DC97DEE008432C2 /* Lembretes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lembretes.swift; sourceTree = "<group>"; };
+		FB15CB9F2DC97E66008432C2 /* LembreteStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LembreteStore.swift; sourceTree = "<group>"; };
+		FB15CBA12DC98506008432C2 /* DetalheLembreteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheLembreteView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB15CB692DC9722C008432C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB15CB792DC9722F008432C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB15CB832DC9722F008432C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB15CB632DC9722C008432C2 = {
+			isa = PBXGroup;
+			children = (
+				FB15CB6E2DC9722C008432C2 /* dti-lembretes */,
+				FB15CB7F2DC9722F008432C2 /* dti-lembretesTests */,
+				FB15CB892DC9722F008432C2 /* dti-lembretesUITests */,
+				FB15CB6D2DC9722C008432C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB15CB6D2DC9722C008432C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB15CB6C2DC9722C008432C2 /* dti-lembretes.app */,
+				FB15CB7C2DC9722F008432C2 /* dti-lembretesTests.xctest */,
+				FB15CB862DC9722F008432C2 /* dti-lembretesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB15CB6E2DC9722C008432C2 /* dti-lembretes */ = {
+			isa = PBXGroup;
+			children = (
+				FB7E4C822DCAB42A008EECA3 /* Service */,
+				FB7E4C812DCAB296008EECA3 /* Views */,
+				FB7E4C802DCAB27A008EECA3 /* Models */,
+				FB15CB6F2DC9722C008432C2 /* dti_lembretesApp.swift */,
+				FB15CB732DC9722E008432C2 /* Assets.xcassets */,
+				FB15CB752DC9722E008432C2 /* Preview Content */,
+			);
+			path = "dti-lembretes";
+			sourceTree = "<group>";
+		};
+		FB15CB752DC9722E008432C2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FB15CB762DC9722E008432C2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB15CB7F2DC9722F008432C2 /* dti-lembretesTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB15CB802DC9722F008432C2 /* LembreteStoreTests.swift */,
+			);
+			path = "dti-lembretesTests";
+			sourceTree = "<group>";
+		};
+		FB15CB892DC9722F008432C2 /* dti-lembretesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FB15CB8A2DC9722F008432C2 /* dti_lembretesUITests.swift */,
+				FB15CB8C2DC9722F008432C2 /* dti_lembretesUITestsLaunchTests.swift */,
+			);
+			path = "dti-lembretesUITests";
+			sourceTree = "<group>";
+		};
+		FB7E4C802DCAB27A008EECA3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FB15CB9D2DC97DEE008432C2 /* Lembretes.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FB7E4C812DCAB296008EECA3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB15CB712DC9722C008432C2 /* ContentView.swift */,
+				FB15CB9B2DC97BA7008432C2 /* ListarLembretesView.swift */,
+				FB15CB992DC97A72008432C2 /* CriarLembreteView.swift */,
+				FB15CBA12DC98506008432C2 /* DetalheLembreteView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FB7E4C822DCAB42A008EECA3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FB15CB9F2DC97E66008432C2 /* LembreteStore.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB15CB6B2DC9722C008432C2 /* dti-lembretes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB15CB902DC9722F008432C2 /* Build configuration list for PBXNativeTarget "dti-lembretes" */;
+			buildPhases = (
+				FB15CB682DC9722C008432C2 /* Sources */,
+				FB15CB692DC9722C008432C2 /* Frameworks */,
+				FB15CB6A2DC9722C008432C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "dti-lembretes";
+			productName = "dti-lembretes";
+			productReference = FB15CB6C2DC9722C008432C2 /* dti-lembretes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB15CB7B2DC9722F008432C2 /* dti-lembretesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB15CB932DC9722F008432C2 /* Build configuration list for PBXNativeTarget "dti-lembretesTests" */;
+			buildPhases = (
+				FB15CB782DC9722F008432C2 /* Sources */,
+				FB15CB792DC9722F008432C2 /* Frameworks */,
+				FB15CB7A2DC9722F008432C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB15CB7E2DC9722F008432C2 /* PBXTargetDependency */,
+			);
+			name = "dti-lembretesTests";
+			productName = "dti-lembretesTests";
+			productReference = FB15CB7C2DC9722F008432C2 /* dti-lembretesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FB15CB852DC9722F008432C2 /* dti-lembretesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB15CB962DC9722F008432C2 /* Build configuration list for PBXNativeTarget "dti-lembretesUITests" */;
+			buildPhases = (
+				FB15CB822DC9722F008432C2 /* Sources */,
+				FB15CB832DC9722F008432C2 /* Frameworks */,
+				FB15CB842DC9722F008432C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB15CB882DC9722F008432C2 /* PBXTargetDependency */,
+			);
+			name = "dti-lembretesUITests";
+			productName = "dti-lembretesUITests";
+			productReference = FB15CB862DC9722F008432C2 /* dti-lembretesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB15CB642DC9722C008432C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					FB15CB6B2DC9722C008432C2 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					FB15CB7B2DC9722F008432C2 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = FB15CB6B2DC9722C008432C2;
+					};
+					FB15CB852DC9722F008432C2 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = FB15CB6B2DC9722C008432C2;
+					};
+				};
+			};
+			buildConfigurationList = FB15CB672DC9722C008432C2 /* Build configuration list for PBXProject "dti-lembretes" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB15CB632DC9722C008432C2;
+			productRefGroup = FB15CB6D2DC9722C008432C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB15CB6B2DC9722C008432C2 /* dti-lembretes */,
+				FB15CB7B2DC9722F008432C2 /* dti-lembretesTests */,
+				FB15CB852DC9722F008432C2 /* dti-lembretesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB15CB6A2DC9722C008432C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB15CB772DC9722E008432C2 /* Preview Assets.xcassets in Resources */,
+				FB15CB742DC9722E008432C2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB15CB7A2DC9722F008432C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB15CB842DC9722F008432C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB15CB682DC9722C008432C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB15CBA02DC97E66008432C2 /* LembreteStore.swift in Sources */,
+				FB15CB9A2DC97A72008432C2 /* CriarLembreteView.swift in Sources */,
+				FB15CB9C2DC97BA7008432C2 /* ListarLembretesView.swift in Sources */,
+				FB15CB722DC9722C008432C2 /* ContentView.swift in Sources */,
+				FB15CB702DC9722C008432C2 /* dti_lembretesApp.swift in Sources */,
+				FB15CBA22DC98506008432C2 /* DetalheLembreteView.swift in Sources */,
+				FB15CB9E2DC97DEE008432C2 /* Lembretes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB15CB782DC9722F008432C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB15CB812DC9722F008432C2 /* LembreteStoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB15CB822DC9722F008432C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB15CB8D2DC9722F008432C2 /* dti_lembretesUITestsLaunchTests.swift in Sources */,
+				FB15CB8B2DC9722F008432C2 /* dti_lembretesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB15CB7E2DC9722F008432C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB15CB6B2DC9722C008432C2 /* dti-lembretes */;
+			targetProxy = FB15CB7D2DC9722F008432C2 /* PBXContainerItemProxy */;
+		};
+		FB15CB882DC9722F008432C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB15CB6B2DC9722C008432C2 /* dti-lembretes */;
+			targetProxy = FB15CB872DC9722F008432C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FB15CB8E2DC9722F008432C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB15CB8F2DC9722F008432C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB15CB912DC9722F008432C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"dti-lembretes/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Pessoal.dti-lembretes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB15CB922DC9722F008432C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"dti-lembretes/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Pessoal.dti-lembretes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FB15CB942DC9722F008432C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Pessoal.dti-lembretesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dti-lembretes.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/dti-lembretes";
+			};
+			name = Debug;
+		};
+		FB15CB952DC9722F008432C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Pessoal.dti-lembretesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dti-lembretes.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/dti-lembretes";
+			};
+			name = Release;
+		};
+		FB15CB972DC9722F008432C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Pessoal.dti-lembretesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "dti-lembretes";
+			};
+			name = Debug;
+		};
+		FB15CB982DC9722F008432C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Pessoal.dti-lembretesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "dti-lembretes";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB15CB672DC9722C008432C2 /* Build configuration list for PBXProject "dti-lembretes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB15CB8E2DC9722F008432C2 /* Debug */,
+				FB15CB8F2DC9722F008432C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB15CB902DC9722F008432C2 /* Build configuration list for PBXNativeTarget "dti-lembretes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB15CB912DC9722F008432C2 /* Debug */,
+				FB15CB922DC9722F008432C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB15CB932DC9722F008432C2 /* Build configuration list for PBXNativeTarget "dti-lembretesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB15CB942DC9722F008432C2 /* Debug */,
+				FB15CB952DC9722F008432C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB15CB962DC9722F008432C2 /* Build configuration list for PBXNativeTarget "dti-lembretesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB15CB972DC9722F008432C2 /* Debug */,
+				FB15CB982DC9722F008432C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB15CB642DC9722C008432C2 /* Project object */;
+}
