@@ -4,6 +4,8 @@ struct ListarLembretesView: View {
     @EnvironmentObject var store: LembreteStore
     @State private var isEditMode: EditMode = .inactive
 
+    let azul = Color(red: 128/255, green: 222/255, blue: 234/255)
+
     var body: some View {
         NavigationView {
             List {
@@ -11,7 +13,7 @@ struct ListarLembretesView: View {
                     Section(header:
                         Text(dia.formatted(date: .abbreviated, time: .omitted))
                             .font(.title3.bold())
-                            .foregroundColor(.blue)
+                            .foregroundColor(azul)
                     ) {
                         let lembretesDoDia = store.lembretesAgrupados[dia] ?? []
 
@@ -21,16 +23,16 @@ struct ListarLembretesView: View {
                                     ZStack {
                                         RoundedRectangle(cornerRadius: 12)
                                             .fill(.ultraThinMaterial)
-                                            .shadow(radius: 2)
+                                            .shadow(color: azul.opacity(0.3), radius: 4, x: 0, y: 2)
 
                                         VStack(alignment: .leading, spacing: 4) {
                                             Text(lembrete.texto)
                                                 .font(.headline)
-                                                .foregroundColor(.primary)
+                                                .foregroundColor(.white)
 
                                             Text(lembrete.data.formatted(date: .omitted, time: .shortened))
                                                 .font(.subheadline)
-                                                .foregroundColor(.secondary)
+                                                .foregroundColor(.gray)
                                         }
                                         .padding()
                                     }
@@ -50,11 +52,16 @@ struct ListarLembretesView: View {
                     }
                 }
             }
+            .scrollContentBackground(.hidden) 
+            .background(Color.black)
             .navigationTitle("Seus Lembretes")
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 EditButton()
             }
-            .environment(\.editMode, $isEditMode)
+            .toolbarBackground(Color.black, for: .navigationBar)
+            .toolbarColorScheme(.dark, for: .navigationBar)
         }
+        .preferredColorScheme(.dark)
     }
 }

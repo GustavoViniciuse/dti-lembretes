@@ -9,6 +9,8 @@ struct DetalheLembreteView: View {
     @State private var novaDescricao: String = ""
     @State private var erro: String?
 
+    let azul = Color(red: 128/255, green: 222/255, blue: 234/255)
+
     init(lembrete: Binding<Lembrete>) {
         self._lembrete = lembrete
         _novoTexto = State(initialValue: lembrete.wrappedValue.texto)
@@ -19,28 +21,35 @@ struct DetalheLembreteView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                VStack(alignment: .leading, spacing: 16) {
-                    Group {
-                        Text("Nome")
-                            .font(.headline)
-                        TextField("Digite o nome", text: $novoTexto)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                VStack(spacing: 20) {
+                    TextField("Nome do lembrete", text: $novoTexto)
+                        .padding()
+                        .background(Color(.systemGray6).opacity(0.1))
+                        .overlay(RoundedRectangle(cornerRadius: 12).stroke(azul.opacity(0.7), lineWidth: 1.2))
+                        .foregroundColor(azul)
+                        .cornerRadius(12)
+                        .accentColor(azul)
 
-                        Text("Data e Hora")
-                            .font(.headline)
-                        DatePicker("Selecionar data", selection: $novaData, displayedComponents: [.date, .hourAndMinute])
-                            .labelsHidden()
+                    DatePicker("Selecionar data", selection: $novaData, displayedComponents: [.date, .hourAndMinute])
+                        .datePickerStyle(.compact)
+                        .padding()
+                        .background(Color(.systemGray6).opacity(0.1))
+                        .overlay(RoundedRectangle(cornerRadius: 12).stroke(azul.opacity(0.7), lineWidth: 1.2))
+                        .cornerRadius(12)
+                        .foregroundColor(azul)
 
-                        Text("Descrição")
-                            .font(.headline)
-                        TextEditor(text: $novaDescricao)
-                            .frame(minHeight: 100)
-                            .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray.opacity(0.3)))
-                    }
+                    TextEditor(text: $novaDescricao)
+                        .frame(minHeight: 100)
+                        .padding()
+                        .background(Color(.systemGray6).opacity(0.1))
+                        .overlay(RoundedRectangle(cornerRadius: 12).stroke(azul.opacity(0.7), lineWidth: 1.2))
+                        .cornerRadius(12)
+                        .foregroundColor(.white)
 
                     if let erro {
                         Text(erro)
                             .foregroundColor(.red)
+                            .font(.caption)
                     }
 
                     Button("Salvar") {
@@ -60,17 +69,35 @@ struct DetalheLembreteView: View {
 
                         dismiss()
                     }
-                    .buttonStyle(.borderedProminent)
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                    .background(
+                        LinearGradient(
+                            gradient: Gradient(colors: [
+                                Color(red: 77/255, green: 208/255, blue: 225/255),
+                                azul
+                            ]),
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        )
+                    )
+                    .foregroundColor(.black)
+                    .cornerRadius(14)
+                    .shadow(color: azul.opacity(0.5), radius: 10, x: 0, y: 5)
 
                     Button("Cancelar", role: .cancel) {
                         dismiss()
                     }
-                    .padding(.top, 4)
+                    .foregroundColor(.gray)
                 }
                 .padding()
             }
+            .background(Color.black.ignoresSafeArea())
             .navigationTitle("Editar Lembrete")
-
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbarBackground(Color.black, for: .navigationBar)
+            .toolbarColorScheme(.dark, for: .navigationBar)
         }
+        .preferredColorScheme(.dark)
     }
 }
