@@ -37,31 +37,35 @@ Os lembretes são organizados em ordem cronológica e contam com validação de 
 
 ## ▶️ Como executar o projeto
 
-# 1. Clone o repositório:
+### 1. Clone o repositório:
 
--git clone https://github.com/seu-usuario/nome-do-repositorio.git
-
-# 2. Abra o projeto no Xcode:
-
+```bash
+git clone https://github.com/seu-usuario/nome-do-repositorio.git
+```
+### 2. Abra o projeto no Xcode:
+```bash
 -open dti-lembretes.xcodeproj
 -Conecte um simulador ou dispositivo com iOS 13+ e execute o projeto (Cmd + R)
-
-
+```
 
 ## 📷 Capturas de Tela
 
 As imagens abaixo são exemplos visuais da interface do app.
 
-##✅ Tela de Criação de Lembrete
+### ✅ Tela de Criação de Lembrete
 
-![Criar lembrete](https://drive.google.com/file/d/1vOs0Fy969jqV5OqA-hWinrct52O1czEm/view?usp=share_link)
+<img src="https://github.com/user-attachments/assets/8d8557a8-2971-4b32-8bb9-c7177defa4dc" width="200"/>
 
-##📅 Lista de Lembretes Agrupados por Data
 
-![Listar lembrete](https://drive.google.com/file/d/1ryBgpY45pmOhYtBJZvpc93ERmrv2RHlR/view?usp=share_link)
+### 📅 Lista de Lembretes Agrupados por Data
 
-##✏️ Tela de Edição de Lembrete
+<img src="https://github.com/user-attachments/assets/d93a6807-0161-45c5-8eb0-5afab8a8798e" width="200"/>
 
-![Editar lembrete](https://drive.google.com/file/d/1YQqDtyKmE-y-iKcoFvA9dFmmweuSpS9_/view?usp=share_link)
+
+### ✏️ Tela de Edição de Lembrete
+
+<img src="https://github.com/user-attachments/assets/6a7fabfd-4906-4f7c-9aaf-9e1221d68a71" width="200"/>
+
+
 
 
