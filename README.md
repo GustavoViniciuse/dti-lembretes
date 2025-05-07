@@ -11,6 +11,7 @@ Os lembretes são organizados em ordem cronológica e contam com validação de 
   - Campo "Data" deve ser válida e estar no futuro
 - ✅ Editar nome, data e descrição do lembrete (respeitando as validações)
 - ✅ Excluir lembrete individualmente
+  - Na listagem de lembretes, há uma opção Editar, que exibe o botão de exclusão ao lado de cada lembrete
 - ✅ Exibir os dias em ordem cronológica
 - ✅ Visualizar detalhes do lembrete ao clicar sobre ele
 
